@@ -1,0 +1,167 @@
+@font-face{
+    src: url(fonts/Poppins-ExtraBoldItalic.ttf);
+    font-family: poppins-r;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: aquamarine;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main-index{
+    width: 40%;
+    margin: 100px auto;
+    background-color: aliceblue;
+    height: 400px;
+    padding: 20px;
+    border-bottom-right-radius: 40%;
+}
+.main-index .main-section{
+    width: 100%; height: 100%;
+    display: flex; flex-direction: column;
+    border-bottom-right-radius: 40%;
+}
+.main-index .main-section .data-age{
+    background-color: aliceblue;
+    display: flex;
+    width: 100%;
+}
+.main-index .main-section .data-age > div{
+    display: flex; flex-direction: column;
+    margin-right: 10px;
+    width: 29%;
+}
+.main-index .main-section .data-age > div > label{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.main-index .main-section .data-age > div > label.error{
+    color: red;
+}
+.main-index .main-section .data-age > div > span{
+    font-size: 13px;
+    color: red;
+    font-weight: bold;
+    font-style: italic;
+    display: none;
+   
+}
+.main-index .main-section .data-age > div > span:first-of-type.error-1,
+.main-index .main-section .data-age > div > span:last-of-type.error-2{
+    display: block;
+}
+
+.main-index .main-section .data-age > div > input{
+    width: 100%;
+    height: 40px;
+    margin: 5px 0;
+    padding: 0 0 0 5px;
+}
+.main-index .main-section .data-age > div > input.error{
+    border: 1px solid red;
+}
+.main-index .main-section .data-age > div > input::placeholder{
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    opacity: .5;
+}
+.main-index .main-section .icon-sub{
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+}
+.main-index .main-section .icon-sub > hr{
+    width: 100%;
+    height: 0;
+}
+.main-index .main-section .icon-sub > span{
+    width: 50px; height: 50px;
+    display: flex;
+    justify-content: center; align-items: center;
+    background-color: rgb(140, 0, 255);
+    border-radius: 50%;
+    color: aliceblue;
+    font-size: 20px;
+    cursor: pointer;
+}
+.main-index .main-section > .value-of-age{
+    background-color: aliceblue;
+    display: flex; flex-direction: column;
+    height: 220px;
+    border-bottom-right-radius: 50%;
+}
+.main-index .main-section > .value-of-age > div{
+    color: black; font-size: 50px;
+    font-family: poppins-r;;
+}
+.main-index .main-section > .value-of-age > div > span:first-of-type{
+    color: blue;
+  
+}
+@media(max-width:912px){
+    .main-index{
+        width: 50%;
+    }
+    .main-index .main-section .data-age > div > span:first-of-type,
+    .main-index .main-section .data-age > div > span:last-of-type{
+        font-size: 7px;
+       
+    }
+}
+@media(max-width:724px){
+    .main-index{
+        width: 70%;
+    }
+}
+@media(max-width:540px){
+    .main-index{
+        width: 90%;
+    }
+    .main-index .main-section .data-age > div > span:first-of-type,
+.main-index .main-section .data-age > div > span:last-of-type{
+    font-size: 7px;
+    text-align: center;
+}
+.main-index .main-section .data-age > div{
+    width: 30%;
+    padding: 0 3px;
+}
+.main-index .main-section .icon-sub{
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.main-index .main-section .icon-sub > span{
+    position: absolute;
+    right: 50%;width: 40px;height: 40px;
+}
+}
+@media(max-width:414px){
+    .main-index{
+        width: 100%;
+    }
+    .main-index .main-section .data-age > div > span:first-of-type,
+.main-index .main-section .data-age > div > span:last-of-type{
+    font-size: 7px;
+}
+}
+
+@media(max-width:360px){
+    .main-index .main-section > .value-of-age > div{
+        font-size: 40px;
+    }
+}
+@media(max-width:280px){
+    .main-index .main-section > .value-of-age > div{
+        font-size: 30px;
+    }
+    .main-index .main-section .data-age > div > span:first-of-type,
+    .main-index .main-section .data-age > div > span:last-of-type{
+        font-size: 4px;
+    }
+    .main-index .main-section .icon-sub{
+        margin-bottom: 20px;
+    }
+}

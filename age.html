@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="age.css">
+    <link rel="stylesheet" href="all.css">
+    <title>age-calculator-app-maun</title>
+</head>
+<body>
+    <div class="main-index">
+        <div class="main-section">
+            <div class="data-age">
+                <div class="day">
+                    <label for="day" class="">day</label><input type="number" name="day" class="" id="day" placeholder="DD">
+                    <span class="">This field is required</span>
+                    <span class="">Must be a valid day</span>
+                </div>
+                <div class="month">
+                    <label for="month" class="">month</label><input type="number" name="month" class="" id="month" placeholder="MM">
+                    <span class="">This field is required</span>
+                    <span class="">Must be a valid month</span>
+                </div>
+                <div class="year">
+                    <label for="year" class="">year</label><input type="number" name="year" class="" id="year" placeholder="YY">
+                    <span class="">This field is required</span>
+                    <span class="">Must be in the past</span>
+                </div>
+            </div>
+            <div class="icon-sub">
+                <hr>
+                <span><i class="fa fa-sign-in sub"></i></span>
+            </div>
+            <div class="value-of-age">
+            <div class="years">
+                <span class="eror"><i class="fa fa-minus"></i> <i class="fa fa-minus"></i></span>
+                <span title="year">years</span>
+            </div>
+            <div class="months">
+                <span title="month"><i class="fa fa-minus"></i> <i class="fa fa-minus"></i></span>
+                <span>months</span>
+            </div>
+            <div class="days">
+                <span><i class="fa fa-minus"></i> <i class="fa fa-minus"></i></span>
+                <span title="day">days</span>
+            </div>
+        </div>
+        </div>
+    </div>
+    <script src="age.js"></script>
+    <script src="all.js"></script>
+</body>
+</html>
